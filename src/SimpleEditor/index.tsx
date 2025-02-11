@@ -8,7 +8,7 @@ const SimpleEditor: React.FC = () => {
   useEffect(() => {
     if (editorRef.current) {
       const startState = EditorState.create({
-        doc: 'console.log("Hello, CodeMirror 6!");',
+        doc: '最简单的编辑器',
         extensions: [basicSetup],
       });
       const view = new EditorView({
