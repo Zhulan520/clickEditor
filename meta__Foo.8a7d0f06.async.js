@@ -1,8 +1,0 @@
-"use strict";(self.webpackChunkclick_insert_editor=self.webpackChunkclick_insert_editor||[]).push([[123],{9747:function(a,t,e){e.r(t),e.d(t,{demos:function(){return p}});var i=e(17061),n=e.n(i),_=e(17156),u=e.n(_),r=e(67294),D=e(76346),E=e(40828),p={"foo-demo-0":{component:r.memo(r.lazy(u()(n()().mark(function m(){var l,d;return n()().wrap(function(o){for(;;)switch(o.prev=o.next){case 0:return o.next=2,Promise.resolve().then(e.bind(e,40828));case 2:return l=o.sent,d=l.default,o.abrupt("return",{default:function(){return r.createElement(d,{title:"Hello dumi!"})}});case 5:case"end":return o.stop()}},m)})))),asset:{type:"BLOCK",id:"foo-demo-0",refAtomIds:["Foo"],dependencies:{"index.jsx":{type:"FILE",value:`import Foo from '../Foo';
-
-export default () => <Foo title="Hello dumi!" />;`},"../Foo.tsx":{type:"FILE",value:e(46659).Z}},entry:"index.jsx"},context:{"../Foo.tsx":E,"/Users/eleme/Desktop/clickEditor/src/Foo/index.tsx":E},renderOpts:{compile:function(){var m=u()(n()().mark(function d(){var c,o=arguments;return n()().wrap(function(s){for(;;)switch(s.prev=s.next){case 0:return s.next=2,e.e(335).then(e.bind(e,37335));case 2:return s.abrupt("return",(c=s.sent).default.apply(c,o));case 3:case"end":return s.stop()}},d)}));function l(){return m.apply(this,arguments)}return l}()}}}},40828:function(a,t,e){e.r(t);var i=e(67294),n=e(85893),_=function(r){return(0,n.jsx)("h4",{children:r.title})};t.default=_},65304:function(a,t,e){e.r(t),e.d(t,{texts:function(){return n}});var i=e(76346);const n=[{value:"This is an example component.",paraId:0,tocIndex:0}]},46659:function(a,t){t.Z=`import React, { type FC } from 'react';
-
-const Foo: FC<{ title: string }> = (props) => <h4>{props.title}</h4>;
-
-export default Foo;
-`}}]);
