@@ -11,13 +11,17 @@ const SimpleEditor: React.FC = () => {
         doc: 'console.log("Hello, CodeMirror 6!");',
         extensions: [basicSetup],
       });
-
-      new EditorView({
+      const view = new EditorView({
         state: startState,
         parent: editorRef.current,
       });
+
+      // 清理函数，以防止组件卸载时出现多个编辑器实例
+      return () => {
+        view.destroy();
+      };
     }
-  }, []);
+  }, []); // 空依赖数组，确保只在挂载时执行一次
 
   return (
     <div

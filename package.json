@@ -1,8 +1,10 @@
 {
-  "name": "clickEditor",
-  "version": "0.0.1",
+  "name": "click-insert-editor",
+  "version": "0.0.8",
   "description": "可全程释放键盘的、点击插入式的编辑器",
+  "repository": "https://github.com/Zhulan520/clickEditor",
   "license": "MIT",
+  "main": "src/index.ts",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -46,15 +48,19 @@
   },
   "dependencies": {
     "@codemirror/basic-setup": "^0.20.0",
-    "@codemirror/language": "^6.10.8",
-    "@codemirror/state": "^6.5.2",
-    "@codemirror/view": "^6.36.2"
+    "@codemirror/language": "^0.20.2",
+    "@codemirror/state": "^0.20.1",
+    "@codemirror/view": "^0.20.7"
   },
   "devDependencies": {
+    "@codemirror/basic-setup": "^0.20.0",
+    "@codemirror/language": "^0.20.2",
+    "@codemirror/state": "^0.20.1",
+    "@codemirror/view": "^0.20.7",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
     "@umijs/lint": "^4.0.0",
     "dumi": "^2.4.13",
     "eslint": "^8.23.0",
@@ -69,6 +75,10 @@
     "stylelint": "^14.9.1"
   },
   "peerDependencies": {
+    "@codemirror/basic-setup": "^0.20.0",
+    "@codemirror/language": "^0.20.2",
+    "@codemirror/state": "^0.20.1",
+    "@codemirror/view": "^0.20.7",
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
   },
@@ -79,8 +89,8 @@
     "zhuqingyi"
   ],
   "overrides": {
-    "@codemirror/state": "^6.5.2",
-    "@codemirror/view": "^6.36.2",
-    "@codemirror/language": "^6.10.8"
+    "@codemirror/language": "^0.20.2",
+    "@codemirror/state": "^0.20.1",
+    "@codemirror/view": "^0.20.7"
   }
 }
