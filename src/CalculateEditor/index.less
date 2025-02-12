@@ -1,0 +1,36 @@
+.editorBox {
+  background-color: #3e4d5b;
+  padding: 20px;
+  border-radius: 20px;
+  width: 400px;
+  .editorDiv {
+    height: 100px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    background-color: #cedded;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .button {
+    width: 80px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    border: none;
+    :global {
+      span {
+        display: inline-block;
+        align-items: center;
+      }
+    }
+  }
+  .button:last-child {
+    background-color: #fb7928;
+  }
+  .symbolArea {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
