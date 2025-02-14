@@ -10,23 +10,17 @@ export interface CalculateEditorProps {
    */
   buttonStyle?: React.CSSProperties;
   /**
-   * 自定义符号
-   */
-  customSymbol?: {
-    text: string;
-    handleClick?: ({
-      editorViewRef,
-      finishCallback,
-    }: CalculateResultProps) => void;
-  }[];
-  /**
-   * 自定义编辑器出入框的正则
-   */
-  customRegex?: RegExp;
-  /**
-   * 计算完成回调，可将编辑器内容输出
+   * 计算完成的回调。即点击"="，可将编辑器内容输出
    */
   finishCallback?: (content: string) => void;
+  /**
+   * 比例
+   */
+  scale?: number;
+  /**
+   *  输入框背景色
+   */
+  inputBgColor?: string;
 }
 
 /**

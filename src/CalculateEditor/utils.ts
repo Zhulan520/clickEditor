@@ -1,32 +1,14 @@
 import { EditorState, EditorView } from '@codemirror/basic-setup';
 import { all, create } from 'mathjs';
 import { defaultRegex } from './constants';
-import { CalculateResultProps } from './type';
 
 // 自定义限制输入内容的扩展,目前计算器限制了只能输入数字和符号加减乘除
-export const onlyAllowCalculatorInput = ({
-  customRegex,
-  customSymbol,
-}: {
-  customRegex?: RegExp;
-  customSymbol?: {
-    text: string;
-    handleClick?: ({
-      editorViewRef,
-      finishCallback,
-    }: CalculateResultProps) => void;
-  }[];
-}) =>
+export const onlyAllowCalculatorInput = () =>
   EditorState.transactionFilter.of((event) => {
     if (!event.docChanged) return event;
     const newDoc = event.newDoc.toString();
-    // 如果自定义了符号,没定义正则，则不限制输入
-    if (customSymbol && !customRegex) {
-      return event;
-    }
-    // 如果自定义了符号,定义了正则，则限制输入
-    const regex = customSymbol && customRegex ? customRegex : defaultRegex;
-    if (regex.test(newDoc)) {
+
+    if (defaultRegex.test(newDoc)) {
       return event;
     } else {
       return [];
