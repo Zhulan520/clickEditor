@@ -1,6 +1,6 @@
 {
   "name": "click-insert-editor",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "description": "可全程释放键盘的、点击插入式的编辑器",
   "keywords": [
     "react",

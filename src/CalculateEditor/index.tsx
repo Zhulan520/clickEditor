@@ -30,6 +30,7 @@ const CalculateEditor = ({
           CMEditorView.theme({
             '&.cm-editor': {
               height: '100%',
+              color: 'black',
             },
             '&.cm-editor .cm-scroller': {
               overflow: 'auto',
@@ -105,6 +106,7 @@ const CalculateEditor = ({
           marginBottom: 25 * scale,
           fontSize: 40 * scale,
           borderRadius: 20 * scale,
+          textAlign: 'start',
         }}
       />
       <div className="symbolArea" style={{ gap: 15 * scale }}>
