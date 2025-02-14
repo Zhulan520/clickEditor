@@ -1,11 +1,10 @@
-import { EditorView, basicSetup } from '@codemirror/basic-setup';
-import { EditorState } from '@codemirror/state';
+import { EditorState, EditorView, basicSetup } from '@codemirror/basic-setup';
 import { EditorView as CMEditorView } from '@codemirror/view';
 import { Button } from 'antd';
 import { isEmpty } from 'lodash';
 import React, { useEffect, useRef } from 'react';
 import { SymbolArray } from './constants';
-import './index.less';
+import './index.css';
 import { CalculateEditorProps } from './type';
 import { onlyAllowCalculatorInput } from './utils';
 
@@ -69,7 +68,7 @@ const CalculateEditor = ({
         view.destroy();
       };
     }
-  }, []); // 空依赖数组，确保只在挂载时执行一次
+  }, [customSymbol, customRegex]);
 
   const insertText = (text: string) => {
     if (editorViewRef.current) {
