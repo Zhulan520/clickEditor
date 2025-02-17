@@ -19,4 +19,11 @@ export default defineConfig({
     // 设置主题的名称
     name: 'clickEditor',
   },
+  targets: {
+    chrome: '89', // 最低支持BigInt的Chrome版本
+  },
+  jsMinifier: 'esbuild', // 确保使用esbuild
+  jsMinifierOptions: {
+    target: 'es2020', // 强制使用ES2020标准
+  },
 });

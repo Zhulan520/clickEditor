@@ -56,6 +56,11 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "browserslist": [
+    "last 2 versions",
+    "Chrome >= 89",
+    "not ie 11"
+  ],
   "dependencies": {
     "@codemirror/basic-setup": "^0.20.0",
     "@codemirror/language": "^0.20.2",
