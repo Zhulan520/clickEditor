@@ -10,6 +10,7 @@
     "clickEditor",
     "click-insert-editor"
   ],
+  "homepage": "https://zhulan520.github.io/clickEditor",
   "repository": "https://github.com/Zhulan520/clickEditor",
   "license": "MIT",
   "main": "src/index.ts",
@@ -61,7 +62,6 @@
     "@codemirror/state": "^0.20.1",
     "@codemirror/view": "^0.20.7",
     "antd": "^5.23.4",
-    "bignumber.js": "^9.1.2",
     "lodash": "^4.17.21",
     "mathjs": "^14.2.1"
   },
